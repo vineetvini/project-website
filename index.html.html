@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Cost Estimator</title>
+    <link href=file:///C:/Users/hp/Desktop/building%20cost%20estimator.css rel="stylesheet" name="">
+</head>
+<body>
+<div class="estimator-container">
+    <h1>-----------------------------------------------Building Cost Estimator----------------------------------------------</h1>
+    <!-- Your estimator form and content go here -->
+</div>
+    <div class="login-container">
+    <form action="{{ url_for('estimator') }}" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+</div>
+</body>
+</html>
